@@ -6,3 +6,35 @@ services:
       - ./resorce/index.html:/etc/nginx/html/index.html
     ports:
       - 80:80
+    restart: always
+  
+  vue1:
+    image: nginx:latest
+    volumes:
+      - ./resorce/vue1/index.html:/usr/share/nginx/html/index.html
+    restart: always
+  
+  vue2:
+    image: nginx:latest
+    volumes:
+      - ./resorce/vue2/index.html:/usr/share/nginx/html/index.html
+    restart: always
+  
+  vue3:
+    image: nginx:latest
+    volumes:
+      - ./resorce/vue3/index.html:/usr/share/nginx/html/index.html
+    restart: always
+  
+  vue4:
+    image: nginx:latest
+    volumes:
+      - ./resorce/vue4/index.html:/usr/share/nginx/html/index.html
+    restart: always
+  
+  vue5:
+    image: nginx:latest
+    volumes:
+      - ./resorce/vue5/index.html:/usr/share/nginx/html/index.html
+    restart: always
+  
